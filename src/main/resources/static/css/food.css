@@ -53,9 +53,15 @@ body {
 
 .box1 img, .box2 img {
     width: 40rem; /* Set a fixed width for the images */
-    height: 30rem;
+    height: 35rem;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
+    transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.box1:hover img, .box2:hover img {
+    border: 0.3rem solid #ffd700;
+    transform: scale(1.02);
 }
 
 .box1 h2, .box2 h3 {

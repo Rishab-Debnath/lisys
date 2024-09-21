@@ -202,15 +202,18 @@ section {
     transition: all 0.3s ease-in-out;
 }
 
-.card:hover {
+.card: hover{
     transform: translateY(-1rem);
 }
 
 .card img {
-    width: 100%;
+    width: auto;
     height: 200px;
     object-fit: cover;
+    display: block;
+    margin: 0 auto;
 }
+
 
 .card-body {
     padding: 1.5rem;
