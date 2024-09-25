@@ -19,10 +19,12 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+
     @GetMapping("/")
-    public String showLoginPage() {
-        return "login";
+    public String redirectToHome() {
+        return "redirect:/home";  // Redirect to the home page
     }
+
 
     @GetMapping("/login")
     public String loginPage() {
